@@ -1,9 +1,9 @@
 html{
+    scroll-snap-type: y mandatory;
+
     scroll-behavior: smooth;
-    
-    scroll-snap-type: y;
-    
 }
+
 
 body{
     margin:0;
@@ -11,6 +11,7 @@ body{
     background: radial-gradient(circle, rgba(50,45,45,1) 0%, rgba(9,11,11,1) 100%);
     
 }
+
 
 /*Following code taken from w3schools https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp*/
 
@@ -25,29 +26,45 @@ body::-webkit-scrollbar {
     scrollbar-width: none;  /* Firefox */
   }
 /*-------------------------------------------------*/
-header{
-display:flex;
-height:5vh;
-position: fixed;
-z-index: 1;
-width:100%;
-align-items: center;
+
+#navbar{
+display:grid;
+grid-template-columns: 3fr 1fr;
+grid-template-rows: 2fr 1fr 1fr 1fr 2fr;
+grid-template-areas: ". ."
+"about ."
+"work arrow"
+"contact ."
+". .";
+height:100%;
+position:fixed;
+z-index: 100;
 justify-content: center;
+left:-180px;
+background: rgb(9,11,11);
+background: linear-gradient(90deg, rgba(9,11,11,1) 0%, rgba(0,0,0,0) 32%);
+transition: 0.4s ease;
+align-items: center;
 
-    
-}
-nav{
-    width:100%;
 }
 
+#navbar:hover{
+    left:0;
+    background: rgb(9,11,11);
+background: linear-gradient(90deg, rgba(9,11,11,1) 0%, rgba(6,8,8,0.8520658263305322) 45%, rgba(0,0,0,0) 100%);
+    }
+
+    #navbar:hover img{
+        rotate: 180deg;
+    }
 
 .navbuttons{
     font-family: 'Nunito', sans-serif;
     color:whitesmoke;
     text-decoration: none;
-    margin:2vw;
+    font-size: 1.5em;
+    
     text-align: center;
-    float:right;
 }
 
 
@@ -75,7 +92,6 @@ h3{
    font-weight: 100;
    
 }
-
 
 #homepagetitle{
     width:100%;
@@ -150,10 +166,11 @@ h3{
     display:block;
     
 }
-section{
-    
-scroll-snap-align:center;
-scroll-snap-stop: always;
-scroll-behavior: smooth;
+#mainblock, #about, #work{
+   
+scroll-snap-align:start;
+
+scroll-margin: 0px;
+
 }
 
