@@ -48,7 +48,7 @@ const videolinks = [
     var graphicdivarray = parent2.getElementsByTagName("div");
 
     for(let i = 0; i<4;i++){
-        let url = "url('../imgs/graphics/bild" + i + ".png')";
+        let url = "url('imgs/graphics/bild" + i + ".png')";
         graphicdivarray[i].style.backgroundImage = url
     }
     /*Graphics*/
@@ -66,7 +66,7 @@ const videolinks = [
       h2array[i].innerText = text;
   
       //assign images
-      let url = "url('../imgs/thumbnails/bild" + i + ".jpg')";
+      let url = "url('imgs/thumbnails/bild" + i + ".jpg')";
       divarray[i].style.backgroundImage = url;
     }
     /*Videos*/

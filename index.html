@@ -3,17 +3,17 @@
 <head >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/index.css">
-    <link rel="stylesheet" href="../styles/work.css">
-    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/work.css">
+    <link rel="stylesheet" href="styles/about.css">
     <!-- Fonts -->
     
    <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 
-    <script src="../js/index.js"></script>
-    <script src="../js/worksection.js"></script>
-    <script src="../js/videoplayer.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/worksection.js"></script>
+    <script src="js/videoplayer.js"></script>
 </head>
 <body onload="loadelements()">
 <header><a href="#anchor1" id="name">ERIK HANSEN</a></header>
@@ -21,13 +21,13 @@
         <a href="contact.html" class="navbuttons" style="grid-area: contact;">Contact</a>
         <a href="#anchor2" class="navbuttons" style="grid-area: about;">About</a>
         <a href="#anchor3" class="navbuttons" style="grid-area: work;">Work</a>
-        <img src="../Icons/right-arrow.png" alt="arrowicon" style="grid-area: arrow; transition:0.5s ease;">
+        <img src="Icons/right-arrow.png" alt="arrowicon" style="grid-area: arrow; transition:0.5s ease;">
     </div>
     
     <main id="pages">
         <a id="anchor1"></a>
     <section id="mainblock">
-        <img id="mainhands" src="../imgs/mainhands.png" alt="Reaching Hands">
+        <img id="mainhands" src="imgs/mainhands.png" alt="Reaching Hands">
             <div id="homepagetitle">
             <h1 class="title">Welcome</h1>
             <h2 class="subtext">...to my portfolio</h2>
@@ -44,7 +44,7 @@
     <h1 id="worktitle">About</h1>
     <aside id="video">
         
-        <video autoplay muted loop class="videocontrols"><source src="../Showreel.mp4"></video>
+        <video autoplay muted loop class="videocontrols"><source src="Showreel.mp4"></video>
     </aside>
 </section>
 
@@ -53,7 +53,7 @@
     <div id="videoplayer">
         <div id="videowrapper" onclick="videoplayerclose()"><iframe id="videoframe" width="930" height="523" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
         <div id="videodescription">Videodescription Here</div>
-        <img id="closevideoplayer" src="../Icons/closeicon.svg" alt="crossbutton" onclick="videoplayerclose()">
+        <img id="closevideoplayer" src="Icons/closeicon.svg" alt="crossbutton" onclick="videoplayerclose()">
     </div>
 
     
@@ -83,7 +83,7 @@
 
     <!--Graphic work section-->
     <div id="workrightsection2">
-        <div class="graphicitem" onclick="location.href='../imgs/graphics/kafebrädansg.pdf';"><h2>Kafè Brädan</h2><p>Download Style Guide as PDF</p></div>
+        <div class="graphicitem" onclick="location.href='imgs/graphics/kafebrädansg.pdf';"><h2>Kafè Brädan</h2><p>Download Style Guide as PDF</p></div>
         <div class="graphicitem"><h2>Coming Soon</h2><p>In the works</p></div>
         <div class="graphicitem"><h2>Coming Soon</h2><p>In the works</p></div>
         <div class="graphicitem"><h2>Coming Soon</h2><p>In the works</p></div>
@@ -95,6 +95,6 @@
     </div>
 </section>
 </main>
-<script src="../js/videoplayer.js"></script>
+<script src="js/videoplayer.js"></script>
 </body>
 </html>
