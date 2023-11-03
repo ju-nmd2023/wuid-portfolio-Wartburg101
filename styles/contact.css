@@ -1,6 +1,12 @@
 form{
+color:white;
+font-family: "Nunito", sans-serif;
+}
+#formcontainer{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    margin-left: auto;
-    margin-right: auto;
-
 }
