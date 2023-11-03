@@ -11,14 +11,14 @@
    <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 
-    <script src="../js/title.js"></script>
-    
-
+    <script src="../js/index.js"></script>
+    <script src="../js/worksection.js"></script>
+    <script src="../js/videoplayer.js"></script>
 </head>
-<body onload="loadvideos()">
+<body onload="loadvideos()" onload="loadgraphics()">
 <header><a href="#anchor1" id="name">ERIK HANSEN</a></header>
     <div id="navbar">
-        <a href="#" class="navbuttons" style="grid-area: contact;">Contact</a>
+        <a href="contact.html" class="navbuttons" style="grid-area: contact;">Contact</a>
         <a href="#anchor2" class="navbuttons" style="grid-area: about;">About</a>
         <a href="#anchor3" class="navbuttons" style="grid-area: work;">Work</a>
         <img src="../Icons/right-arrow.png" alt="arrowicon" style="grid-area: arrow; transition:0.5s ease;">
@@ -56,19 +56,20 @@
         <img id="closevideoplayer" src="../Icons/closeicon.svg" alt="crossbutton" onclick="videoplayerclose()">
     </div>
 
-    <div id="filter"></div>
+    
     <div id="workleftsection">
         <h1 id="worktitle">Work.</h1>
         <div class="categorybuttons">
-            <a class="workcategorybutton" href="#">Film</a>
-            <a class="workcategorybutton" href="#">Graphics</a>
-            <a class="workcategorybutton" href="#">Web</a>
+            <a id="clickfilm" class="workcategorybutton" onclick="changesection(this.id)">Film</a>
+            <a id="clickgraphics" class="workcategorybutton" onclick="changesection(this.id)">Graphics</a>
+            <a id="clickweb" class="workcategorybutton" onclick="changesection(this.id)">Web</a>
         </div>
-        <div id="workdescription"><p>So i caught your interest? Well here's my work! Press whatever button you're interested in.</p></div>
+        <div id="workdescription"><p>So i caught your interest? Well here's my work! Press whatever category you're interested in and enjoy what i have to offer! New work is added over time.</p></div>
 
     </div>
     
-    <div id="workrightsection">
+    <!--Filmwork section-->
+    <div id="workrightsection1">
             <div class="video-0" onclick="videoplayeropen(this.getAttribute('class'))"><h2></h2><p>Watch Video</p></div>
             <div class="video-1" onclick="videoplayeropen(this.getAttribute('class'))"><h2></h2><p>Watch Video</p></div>
             <div class="video-2" onclick="videoplayeropen(this.getAttribute('class'))"><h2></h2><p>Watch Video</p></div>
@@ -80,6 +81,18 @@
             <div class="video-8" onclick="videoplayeropen(this.getAttribute('class'))"><h2></h2><p>Watch Video</p></div> 
     </div>
 
+    <!--Graphic work section-->
+    <div id="workrightsection2">
+        <div class="graphicitem"><h2>Kafè Brädan</h2><p>Style Guide</p></div>
+        <div class="graphicitem"><h2>Coming Soon</h2><p>In the works</p></div>
+        <div class="graphicitem"><h2>Coming Soon</h2><p>In the works</p></div>
+        <div class="graphicitem"><h2>Coming Soon</h2><p>In the works</p></div>
+    </div>
+
+     <!--Web work section-->
+    <div id="workrightsection3">
+
+    </div>
 </section>
 </main>
 <script src="../js/videoplayer.js"></script>

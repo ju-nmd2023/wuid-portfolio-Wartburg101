@@ -10,30 +10,30 @@
 
 #workleftsection {
   display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 30% 10% 60%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 3fr;
   gap: 0px 0px;
   grid-template-areas:
     "title"
     "buttons"
     "description";
-  float: left;
+  
   width: 45%;
   height: 70vh;
   
 }
 #worktitle {
   font-family: "Bebas Neue", sans-serif;
-  display: block;
-  overflow-wrap: break-word;
   text-align: center;
   grid-area: "title";
   font-size: 200px;
+  align-self: center;
 }
 
 .categorybuttons {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
@@ -43,6 +43,9 @@
 #workdescription {
   grid-area: "description";
   font-family: "Nunito", sans-serif;
+padding-left: 10%;
+padding-right: 10%;
+
 }
 .workcategorybutton {
   display: block;
@@ -51,22 +54,22 @@
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   padding: 6px;
-  font-size: 30px;
+  font-size: 1.2rem;
   border-color: black;
-  border-radius: 90%;
   border: solid 2px;
   margin: 10px;
   width: 20%;
   text-align: center;
   transition: 0.2s ease;
+  cursor: pointer;
 }
 .workcategorybutton:hover {
   background-color: black;
   color: red;
   border-color: black;
 }
-
-#workrightsection {
+/*__FILMSECTION__*/
+#workrightsection1 {
   align-self: center;
   margin: 0 auto;
   width: 55%;
@@ -76,12 +79,11 @@
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 6px;
   grid-row-gap: 6px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 6px;
+  margin-right: 6px;
+  
 }
 
-#workrightsection div[class*="video"] h2 {
+#workrightsection1 div[class*="video"] h2 {
   display: none;
   opacity: 0%;
   color: white;
@@ -91,7 +93,7 @@
   font-size: large;
   font-weight: bold;
 }
-#workrightsection div[class*="video"] p {
+#workrightsection1 div[class*="video"] p {
   display: none;
   opacity: 0%;
   color: white;
@@ -122,8 +124,8 @@ div[class*="video"]:hover {
   cursor: pointer;
 }
 
-#workrightsection div[class*="video"]:hover h2,
-#workrightsection div[class*="video"]:hover p {
+#workrightsection1 div[class*="video"]:hover h2,
+#workrightsection1 div[class*="video"]:hover p {
   display: block;
   opacity: 100%;
 }
@@ -190,7 +192,6 @@ div[class*="video"]:hover {
 }
 #closevideoplayer {
   cursor: pointer;
-  display: block;
   width: 35px;
   float: right;
   position: fixed;
@@ -213,7 +214,6 @@ div[class*="video"]:hover {
   justify-content: center;
   position: relative;
   padding-bottom: 56.25%; 
-  
 }
 
 #videodescription{
@@ -226,4 +226,35 @@ div[class*="video"]:hover {
   color:white;
   font-family: "Nunito", sans-serif;
 }
+/*__FILMSECTION__*/
 
+/*__GRAPHICSECTION__*/
+#workrightsection2{
+  align-self: center;
+  margin: 0 auto;
+  width: 55%;
+  display:none;
+  height: 70vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  margin-right: 6px;
+}
+.graphicitem{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: ease 0.2s;
+}
+
+.graphicitem:hover{
+  box-shadow: 4px 3px 109px 50px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: 4px 3px 109px 50px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: 4px 3px 109px 50px rgba(0, 0, 0, 0.75) inset;
+  /*----*/
+  cursor: pointer;
+}
