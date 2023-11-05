@@ -1,6 +1,24 @@
 #about{
     height:100vh;
     z-index:1;
-    background-color: brown;
+    background-color: black;
     overflow:hidden;
+    display:grid;
+    grid-template-columns: 5;
+    grid-template-rows: 3;
+    
+}
+#abouttitle{
+    color:white;
+}
+
+#switch{
+    color: white;
+    grid-column:5;
+    grid-row:3;
+    background-size: 70%;
+  background-position:top;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-image: url('../imgs/lightswitch_off.png');
 }
