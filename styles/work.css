@@ -300,8 +300,13 @@ opacity:100%;
 
   }
   #workrightsection1{
-    width:100%;
-
+    width:90%;
+    grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  margin-right: auto;
+  margin-left: auto;
   }
 
 
