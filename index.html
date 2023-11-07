@@ -15,6 +15,7 @@
     <script src="js/worksection.js"></script>
     <script src="js/videoplayer.js"></script>
     
+    
 </head>
 <body onload="loadelements()">
 <header><a href="#anchor1" id="name">ERIK HANSEN</a></header>
@@ -43,13 +44,15 @@
 <section id="about">
     <a id="anchor2"></a>
     
-    
-    <div id="switch"><h3>Click the s</h3></div>
-    <!--<aside id="video">
-        
-        <video autoplay muted loop class="videocontrols"><source src="Showreel.mp4"></video>
-    </aside>-->
-    <script src="js/lightswitch.js"></script>
+    <div id="tv">
+        <h2>Maybe the TV needs a kick?</h2>
+        <div>
+            <video id="tvshowreel" autoplay muted loop class="videocontrols"><source id="tvsource" src="videos/tv-frame-showreel.mp4"></video>
+            <video id="tvstatic" autoplay muted loop class="videocontrols"><source id="tvsource" src="videos/tv-frame-static.mp4"></video>
+        </div>
+    </div>
+    <script src="js/tvswitch.js"></script>
+   
 </section>
 
 <section id="work">

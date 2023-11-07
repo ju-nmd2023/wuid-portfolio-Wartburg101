@@ -10,7 +10,7 @@ body {
   background: radial-gradient(
     circle,
     rgba(50, 45, 45, 1) 0%,
-    rgba(9, 11, 11, 1) 100%
+    rgb(0, 0, 0) 100%
   );
 }
 
@@ -29,7 +29,9 @@ body {
 /*-------------------------------------------------*/
 header{
     position: fixed;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width:100%;
     height:fit-content;
     top:0;
@@ -61,7 +63,6 @@ header{
 
 #navbar:hover {
   left: 0;
-
   background: rgb(9, 11, 11);
   background: linear-gradient(
     90deg,
@@ -84,10 +85,11 @@ header{
 
 h1 {
   font-family: "Bebas Neue", sans-serif;
-  font-size: 200px;
+  font-size:13rem;
   line-height: 110px;
   margin: 0;
 }
+
 
 h2 {
   opacity: 50%;
@@ -125,7 +127,7 @@ h3 {
   border: 2px solid white;
   margin-top: 20px;
   font-family: "Nunito", sans-serif;
-  width: 5vw;
+  width: 100px;
   transition: 0.2s ease;
 }
 #mainhands {
@@ -168,7 +170,7 @@ h3 {
   font-weight: 800;
   text-decoration: none;
   font-family: "Nunito", sans-serif;
-  float: left;
+  
   text-align: center;
   margin: 2vw;
 }
@@ -182,4 +184,35 @@ h3 {
   scroll-snap-align: start;
 
   scroll-margin: 0px;
+}
+
+/*Mobile*/
+
+@media screen and (min-width:300px) and (max-width:700px){
+    h1{
+        font-size: 6rem;
+        line-height: 80%;
+    }
+    #mainhands{
+        width:80vw;
+        min-width: 400px;
+        
+    }
+    h2{
+        margin-top: 0;
+        font-size: 1rem;
+
+    }
+    h3{
+        font-size: 1rem;
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+#navbar{
+   justify-content: end;
+   align-items:end;
+    
+}
 }

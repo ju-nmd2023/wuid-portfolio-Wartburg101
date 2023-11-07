@@ -283,3 +283,28 @@ div[class*="video"]:hover {
 .graphicitem:hover h2, .graphicitem:hover p{
 opacity:100%;
 }
+
+@media screen and (min-width:200px) and (max-width:700px){
+  #work{
+    flex-direction: column;
+  }
+
+  #worktitle{
+    padding-top:20px;
+    font-size: 10rem;
+  }
+
+  #workleftsection{
+    width:100%;
+    grid-template-rows: 2fr 1fr 2fr;
+
+  }
+  #workrightsection1{
+    width:100%;
+
+  }
+
+
+
+  /*FAF9F6*/
+}
