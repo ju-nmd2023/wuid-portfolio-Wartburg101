@@ -292,7 +292,32 @@ div[class*="video"]:hover {
 .graphicitem:hover p {
   opacity: 100%;
 }
+/*__GRAPHICSECTION__*/
 
+/*__WEBSECTION__*/
+#workrightsection3 {
+  align-self: center;
+  margin: 0 auto;
+  width: 55%;
+  display: none;
+  height: 70vh;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+  margin-right: 6px;
+}
+
+.webitem {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  transition: ease 0.2s;
+}
+/*WEBSECTION*/
 @media screen and (min-width: 200px) and (max-width: 700px) {
   #work {
     flex-direction: column;

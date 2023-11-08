@@ -39,6 +39,13 @@
   height: 90%;
   border-radius: 0%;
   cursor: pointer;
+  padding:0;
+}
+
+#tvshowreel{
+  
+  box-shadow: 0px 0px 25px 15px rgba(0,0,0,1.0);
+
 }
 #abouttitle{
     text-align:left;

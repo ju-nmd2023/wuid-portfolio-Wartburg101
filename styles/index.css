@@ -1,6 +1,6 @@
 html {
   scroll-snap-type: y mandatory;
-
+  --white:#FAF9F6;
   scroll-behavior: smooth;
 }
 
@@ -81,7 +81,7 @@ header{
 
 .navbuttons {
   font-family: "Nunito", sans-serif;
-  color: whitesmoke;
+  color: white;
   text-decoration: none;
   font-size: 1.5em;
   text-align: center;
