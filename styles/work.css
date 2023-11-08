@@ -6,6 +6,9 @@
   background-color: #c21807;
   width: 100%;
   align-items: center;
+  background-image: url(../imgs/background2.png);
+  background-position: top;
+  background-repeat: no-repeat;
 }
 
 #workleftsection {
@@ -17,17 +20,18 @@
     "title"
     "buttons"
     "description";
-  
+
   width: 45%;
   height: 70vh;
-  
 }
 #worktitle {
   font-family: "Bebas Neue", sans-serif;
   text-align: center;
   grid-area: "title";
-  font-size: 200px;
+  font-size: 12rem;
   align-self: center;
+  margin: 0;
+  height: 27vh;
 }
 
 .categorybuttons {
@@ -43,9 +47,8 @@
 #workdescription {
   grid-area: "description";
   font-family: "Nunito", sans-serif;
-padding-left: 10%;
-padding-right: 10%;
-
+  padding-left: 10%;
+  padding-right: 10%;
 }
 .workcategorybutton {
   display: block;
@@ -80,11 +83,9 @@ padding-right: 10%;
   grid-column-gap: 6px;
   grid-row-gap: 6px;
   margin-right: 6px;
-  
 }
 
 #workrightsection1 div[class*="video"] h2 {
-  
   opacity: 0%;
   color: white;
   text-align: center;
@@ -94,7 +95,6 @@ padding-right: 10%;
   font-weight: bold;
 }
 #workrightsection1 div[class*="video"] p {
-  
   opacity: 0%;
   color: white;
   text-align: center;
@@ -188,7 +188,6 @@ div[class*="video"]:hover {
   z-index: 2;
   position: absolute;
   display: none;
-  
 }
 #closevideoplayer {
   cursor: pointer;
@@ -197,7 +196,7 @@ div[class*="video"]:hover {
   position: fixed;
   top: 0;
   right: 0;
-  margin:20px;
+  margin: 20px;
 }
 #videoframe {
   margin-left: auto;
@@ -207,33 +206,42 @@ div[class*="video"]:hover {
   top: 0;
   width: 57%;
   height: 57%;
-  min-width: 500px;
+  min-width: 200px;
 }
 #videowrapper {
   display: flex;
   justify-content: center;
   position: relative;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
 }
 
-#videodescription{
+#videodescription {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width:57%;
-  min-width:500px;
+  width: 57%;
+  min-width: 200px;
   margin-top: -22%;
-  color:white;
+  color: white;
   font-family: "Nunito", sans-serif;
 }
+
+#videodescription h1 {
+  width: 100%;
+  height: 3.5rem;
+  font-size: 3rem;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 0;
+}
+
 /*__FILMSECTION__*/
 
 /*__GRAPHICSECTION__*/
-#workrightsection2{
+#workrightsection2 {
   align-self: center;
   margin: 0 auto;
   width: 55%;
-  display:none;
+  display: none;
   height: 70vh;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -241,7 +249,7 @@ div[class*="video"]:hover {
   grid-row-gap: 6px;
   margin-right: 6px;
 }
-.graphicitem{
+.graphicitem {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,7 +259,7 @@ div[class*="video"]:hover {
   transition: ease 0.2s;
 }
 
-.graphicitem:hover{
+.graphicitem:hover {
   box-shadow: 4px 3px 109px 50px rgba(0, 0, 0, 0.75) inset;
   -webkit-box-shadow: 4px 3px 109px 50px rgba(0, 0, 0, 0.75) inset;
   -moz-box-shadow: 4px 3px 109px 50px rgba(0, 0, 0, 0.75) inset;
@@ -259,7 +267,7 @@ div[class*="video"]:hover {
   cursor: pointer;
 }
 
-.graphicitem h2{
+.graphicitem h2 {
   opacity: 0%;
   color: white;
   text-align: center;
@@ -269,7 +277,7 @@ div[class*="video"]:hover {
   font-weight: bold;
 }
 
-.graphicitem p{
+.graphicitem p {
   opacity: 0%;
   color: white;
   text-align: center;
@@ -280,36 +288,59 @@ div[class*="video"]:hover {
   margin: 0;
 }
 
-.graphicitem:hover h2, .graphicitem:hover p{
-opacity:100%;
+.graphicitem:hover h2,
+.graphicitem:hover p {
+  opacity: 100%;
 }
 
-@media screen and (min-width:200px) and (max-width:700px){
-  #work{
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  #work {
     flex-direction: column;
   }
 
-  #worktitle{
-    padding-top:20px;
+  #worktitle {
     font-size: 10rem;
   }
 
-  #workleftsection{
-    width:100%;
-    grid-template-rows: 2fr 1fr 2fr;
-
+  #workleftsection {
+    width: 100%;
+    grid-template-rows: 1fr 1fr 2fr;
+    height: 50%;
   }
-  #workrightsection1{
-    width:90%;
+  #workrightsection1 {
+    width: 90%;
     grid-template-columns: repeat(3, 33%);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 6px;
-  grid-row-gap: 6px;
-  margin-right: auto;
-  margin-left: auto;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 6px;
+    grid-row-gap: 6px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  #videoframe {
+    top: 23%;
+    width: 100%;
+    height: 100%;
+  }
+  #videodescription {
+    margin-top: 20%;
+    line-height: normal;
+    width: 70%;
+  }
+  #videodescription h1 {
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 3rem;
+    font-size: 2.5rem;
+    margin-bottom: 10%;
   }
 
-
+  #worktitle {
+    height: 23vh;
+  }
+  #workrightsection2 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   /*FAF9F6*/
 }

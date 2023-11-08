@@ -7,27 +7,20 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   background-image: url(../imgs/background1.png);
-  background-position: right;
+  background-position: left;
   background-repeat: no-repeat;
   color: white;
 }
 
+
 #tv {
   display: flex;
-  grid-column: 4;
-  grid-row: 2;
+  grid-column: 1;
+  grid-row: 1;
   flex-direction: column;
   justify-content: center;
 }
-#tv h2 {
-  color: white;
-  opacity: 100%;
-  font-size: 15px;
-  font-family: "Nunito", sans-serif;
-  font-style: italic;
-  width: 100%;
-  text-align: center;
-}
+
 
 #tv div {
   display: flex;
@@ -48,18 +41,26 @@
   cursor: pointer;
 }
 #abouttitle{
-    text-align:justify;
+    text-align:left;
     font-size: 7rem;
     line-height: 90px;
-    
+    font-family: "Bebas Neue", sans-serif;
+    margin:0;
 }
 
 #aboutheadtext{
-    grid-area: 1/1 /1 /5;
+    grid-area: 1/2 /1 /5;
     width:100%;
     padding-top: 5vw
-
 }
+
+#aboutbodytext{
+  grid-area: 2/1 /2 /5;
+  font-size: 1rem;
+  font-family: "Nunito", sans-serif;
+  padding: 2vw;
+}
+
 #aboutsubtext{
     opacity: 100%;
     font-family: "Bebas Neue", sans-serif;

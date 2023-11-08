@@ -10,14 +10,17 @@ function videoplayeropen(name) {
   document.getElementById("videoframe").src = videolinks[parseInt(number[1])];
   document.getElementById("videoframe").title = videotitles[number[1]];
 
-  //Add the corresponding videodescription
+  //Add the corresponding videodescription and title
   document.getElementById("videodescription").innerHTML =
-    videodescriptions[parseInt(number[1])];
+  "<h1>" + videotitles[number[1]] + "</h1>" + "<br>" + videodescriptions[parseInt(number[1])];
+
+  
+  document.getElementById("navbar").style.display = "none";
 }
 
 function videoplayerclose() {
+  document.getElementById("navbar").style.display = "grid";
   document.getElementById("videoplayer").style.display = "none";
   document.getElementById("videoframe").src = "";
-  document.getElementById("filter").style.opacity = "0%";
-  document.getElementById("filter").style.display = "none";
+
 }
