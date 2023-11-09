@@ -58,11 +58,12 @@
 #aboutheadtext{
     grid-area: 1/2 /1 /5;
     width:100%;
-    padding-top: 5vw
+    padding-top: 5vw;
+    bottom:0;
 }
 
 #aboutbodytext{
-  grid-area: 2/1 /2 /5;
+  grid-area: 2/1 /2 /4;
   font-size: 1rem;
   font-family: "Nunito", sans-serif;
   padding: 2vw;
@@ -72,7 +73,7 @@
     opacity: 100%;
     font-family: "Bebas Neue", sans-serif;
     font-style: italic;
-    line-height: .5rem;
+    margin:0;
     letter-spacing: .3rem;
 }
 

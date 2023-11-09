@@ -178,7 +178,6 @@ header{
   font-weight: 800;
   text-decoration: none;
   font-family: "Nunito", sans-serif;
-  
   text-align: center;
   margin: 2vw;
 }
@@ -190,7 +189,6 @@ header{
 #about,
 #work {
   scroll-snap-align: start;
-
   scroll-margin: 0px;
 }
 

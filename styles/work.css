@@ -321,6 +321,7 @@ div[class*="video"]:hover {
 @media screen and (min-width: 200px) and (max-width: 700px) {
   #work {
     flex-direction: column;
+    background-position: left;
   }
 
   #worktitle {
@@ -366,6 +367,12 @@ div[class*="video"]:hover {
     margin-left: auto;
     margin-right: auto;
   }
+  #workrightsection3 {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 
   /*FAF9F6*/
 }
