@@ -1,0 +1,11 @@
+.hiddenabout{
+transform:translateX(-50%);
+opacity:0;
+transition:ease 1s;
+filter:blur(5px);
+}
+.showabout{
+opacity:1;
+transform:translateX(0);
+filter:blur(0);
+}

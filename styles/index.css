@@ -81,7 +81,7 @@ header{
 
 .navbuttons {
   font-family: "Nunito", sans-serif;
-  color: white;
+  color: var(--white);
   text-decoration: none;
   font-size: 1.5em;
   text-align: center;
@@ -131,8 +131,8 @@ header{
   margin-right: auto;
   text-decoration: none;
   padding: 10px;
-  color: white;
-  border: 2px solid white;
+  color: var(--white);
+  border: 2px solid var(--white);
   margin-top: 20px;
   font-family: "Nunito", sans-serif;
   width: 100px;
@@ -150,11 +150,11 @@ header{
   transition: 0.4s ease;
 }
 #homepagetitle a:hover {
-  background-color: white;
+  background-color: var(--white);
   color: #212121;
 }
 #mainblock {
-  color: white;
+  color: var(--white);
   display: flex;
   position: relative;
   text-align: center;

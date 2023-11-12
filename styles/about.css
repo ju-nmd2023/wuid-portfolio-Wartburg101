@@ -9,7 +9,7 @@
   background-image: url(../imgs/background1.png);
   background-position: left;
   background-repeat: no-repeat;
-  color: white;
+  color: var(--white);
 }
 
 
@@ -53,20 +53,23 @@
     line-height: 90px;
     font-family: "Bebas Neue", sans-serif;
     margin:0;
+    width:100%;
 }
 
 #aboutheadtext{
-    grid-area: 1/2 /1 /5;
+    grid-area: 1/2 /1 /4;
     width:100%;
     padding-top: 5vw;
     bottom:0;
 }
 
 #aboutbodytext{
-  grid-area: 2/1 /2 /4;
-  font-size: 1rem;
+  grid-area: 2/3 /2 /5;
+  font-size: .8rem;
   font-family: "Nunito", sans-serif;
-  padding: 2vw;
+  padding:2vw;
+  padding-top: 0;
+  
 }
 
 #aboutsubtext{
@@ -75,11 +78,16 @@
     font-style: italic;
     margin:0;
     letter-spacing: .3rem;
+
 }
+
 
 .tvframeanimation {
   animation: punch 0.4s ease 0s 1 normal forwards;
 }
+
+
+
 
 @keyframes punch {
   0%,
@@ -108,3 +116,4 @@
     transform: translateX(-6px) rotate(-1deg);
   }
 }
+

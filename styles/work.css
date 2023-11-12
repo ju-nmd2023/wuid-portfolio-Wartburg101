@@ -87,7 +87,7 @@
 
 #workrightsection1 div[class*="video"] h2 {
   opacity: 0%;
-  color: white;
+  color: var(--white);
   text-align: center;
   transition: 0.2s ease;
   font-family: "Nunito", sans-serif;
@@ -96,7 +96,7 @@
 }
 #workrightsection1 div[class*="video"] p {
   opacity: 0%;
-  color: white;
+  color: var(--white);
   text-align: center;
   transition: 0.2s ease;
   font-family: "Nunito", sans-serif;
@@ -222,7 +222,7 @@ div[class*="video"]:hover {
   width: 57%;
   min-width: 200px;
   margin-top: -22%;
-  color: white;
+  color: var(--white);
   font-family: "Nunito", sans-serif;
 }
 
@@ -269,7 +269,7 @@ div[class*="video"]:hover {
 
 .graphicitem h2 {
   opacity: 0%;
-  color: white;
+  color: var(--white);
   text-align: center;
   transition: 0.2s ease;
   font-family: "Nunito", sans-serif;
@@ -279,7 +279,7 @@ div[class*="video"]:hover {
 
 .graphicitem p {
   opacity: 0%;
-  color: white;
+  color: var(--white);
   text-align: center;
   transition: 0.2s ease;
   font-family: "Nunito", sans-serif;

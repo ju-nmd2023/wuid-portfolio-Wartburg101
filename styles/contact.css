@@ -1,5 +1,5 @@
 form{
-color:white;
+color:var(--white);
 font-family: "Nunito", sans-serif;
 }
 #formcontainer{
