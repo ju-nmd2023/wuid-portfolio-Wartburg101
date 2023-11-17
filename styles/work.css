@@ -14,29 +14,40 @@
 #workleftsection {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr 3fr;
+  grid-template-rows: 2fr 1fr 3fr 1fr;
   gap: 0px 0px;
   grid-template-areas:
     "title"
     "buttons"
-    "description";
-
+    "description"
+    "links";
   width: 45%;
   height: 70vh;
+  padding:7%;
 }
 #worktitle {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Bebas Neue", sans-serif;
-  text-align: center;
   grid-area: "title";
   font-size: 12rem;
   align-self: center;
   margin: 0;
   height: 27vh;
+  line-height: 0;
+ 
+}
+#worktitle p{
+  font-size: 2rem;
+  line-height:5;
+  margin:0;
+  
 }
 
 .categorybuttons {
   display: flex;
-  justify-content: center;
+  justify-content:space-between;
   flex-direction: row;
   align-items: center;
   margin-left: auto;
@@ -47,29 +58,27 @@
 #workdescription {
   grid-area: "description";
   font-family: "Nunito", sans-serif;
-  padding-left: 10%;
-  padding-right: 10%;
+  
 }
 .workcategorybutton {
   display: block;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   font-family: "Nunito", sans-serif;
   font-weight: bold;
   padding: 6px;
   font-size: 1.2rem;
-  border-color: black;
+  border-color: var(--black);
   border: solid 2px;
-  margin: 10px;
-  width: 20%;
+  width: 25%;
   text-align: center;
   transition: 0.2s ease;
   cursor: pointer;
 }
 .workcategorybutton:hover {
-  background-color: black;
-  color: red;
-  border-color: black;
+  background-color: var(--black);
+  color: var(--yellow);
+  border-color: var(--black);
 }
 /*__FILMSECTION__*/
 #workrightsection1 {
@@ -317,19 +326,40 @@ div[class*="video"]:hover {
   flex-direction: column;
   transition: ease 0.2s;
 }
+
+#extlinks{
+  display:flex;
+  flex-direction: row;
+  justify-content: end;
+  grid-area:"links";
+  color:var(--black);
+  
+}
+#extlinks a{
+  text-decoration: none;
+  color:var(--black);
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  align-items: center;
+  font-size: .7rem;
+  margin-left:2%;
+  justify-items:left;
+  gap:1px;
+}
 /*WEBSECTION*/
 @media screen and (min-width: 200px) and (max-width: 700px) {
   #work {
     flex-direction: column;
     background-position: left;
   }
+  
 
   #worktitle {
     font-size: 10rem;
   }
 
   #workleftsection {
-    width: 100%;
+    width: 90%;
     grid-template-rows: 1fr 1fr 2fr;
     height: 50%;
   }
@@ -373,6 +403,9 @@ div[class*="video"]:hover {
     margin-right: auto;
   }
 
+  #extlinks a{
+    font-size: .8rem;
+  }
 
   /*FAF9F6*/
 }

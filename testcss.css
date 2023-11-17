@@ -1,0 +1,73 @@
+body{
+    background-image: url(/imgs/background.png);
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mainpage{
+    display:grid;
+    grid-template-columns: 1fr 400px 1fr;
+    grid-template-rows: 1fr 400px 1fr;
+    width:100vw;
+    height:100vh;
+}
+
+#circle{
+    display:block;
+    border:solid white 1px;
+    justify-self: center;
+    align-self: center;
+   grid-area: 1/1 /4/4; 
+    border-radius: 100%;
+    /*Circle width and height equals diagonal of cube*/
+    width:565.7px;
+    height:565.7px;
+}
+#vertical-lines{
+    display:block;
+    border-left: solid white 1px;
+    border-right: solid white 1px;
+    grid-area: 1/2 /4 /2;
+}
+#horizontal-lines{
+    grid-area: 2/1 /2 /4;
+    display: flex;
+    flex-direction: column;
+    
+    border-top: solid white 1px;
+    border-bottom: solid white 1px;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+#horizontal-lines h1{
+    
+   
+   line-height: 140px;
+   
+    font-family: "transducer-extended", sans-serif;
+font-weight: 800;
+font-style: normal;
+color: white;
+font-size: 12rem;
+margin:0;
+height:40%;
+
+}
+#horizontal-lines h3{
+    font-family: "transducer", sans-serif;
+font-weight: 200;
+font-style: normal;
+color:white;
+font-size: .8rem;
+margin:0;
+}
+#horizontal-lines img{
+    position:fixed;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+z-index: -1;
+    width:180vh;
+    
+}

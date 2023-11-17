@@ -39,16 +39,16 @@ const videodescriptions = [
 //Load Titles and images
 function loadelements() {
   //Get the parent element
-  var parent1 = document.getElementById("workrightsection1");
+  let parent1 = document.getElementById("workrightsection1");
 
-  var parent2 = document.getElementById("workrightsection2");
+  let parent2 = document.getElementById("workrightsection2");
 
-  var parent3 = document.getElementById("workrightsection3");
+  let parent3 = document.getElementById("workrightsection3");
 
  /*Videos*/
   //Collect all h2 elements in one array and divs in another
-  var h2array = parent1.getElementsByTagName("h2");
-  var divarray = parent1.getElementsByTagName("div");
+  let h2array = parent1.getElementsByTagName("h2");
+  let divarray = parent1.getElementsByTagName("div");
 
   /*Go through each element in the array and assign with the corresponding title in
     the const titles array.*/
@@ -65,7 +65,7 @@ function loadelements() {
 
   /*Graphics*/
 
-  var graphicdivarray = parent2.getElementsByTagName("div");
+  let graphicdivarray = parent2.getElementsByTagName("div");
 
   for (let i = 0; i < 4; i++) {
     let url = "url('imgs/graphics/bild" + i + ".png')";
@@ -75,7 +75,7 @@ function loadelements() {
 
   /*Web*/
 
-  var webdivarray = parent3.getElementsByTagName("div");
+  let webdivarray = parent3.getElementsByTagName("div");
 
   for (let i = 0; i < 4; i++) {
     let url = "url('imgs/web/bild" + i + ".png')";

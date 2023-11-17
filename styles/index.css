@@ -1,17 +1,10 @@
 html {
   scroll-snap-type: y mandatory;
-  --white:#FAF9F6;
+  --white: #f6f6f6;
+  --yellow: #ffcb74;
+  --grey: #2f2f2f;
+  --black: #111111;
   scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  background: rgb(50, 45, 45);
-  background: radial-gradient(
-    circle,
-    rgba(50, 45, 45, 1) 0%,
-    rgb(0, 0, 0) 100%
-  );
 }
 
 /*Following code taken from w3schools https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp*/
@@ -26,15 +19,18 @@ body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+body {
+  margin: 0;
+}
 /*-------------------------------------------------*/
-header{
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:100%;
-    height:fit-content;
-    top:0;
+header {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  width: 100%;
+  height: fit-content;
+  top: 0;
 }
 #navbar {
   display: grid;
@@ -50,7 +46,7 @@ header{
   position: fixed;
   z-index: 100;
   justify-content: center;
-  left: -180px;
+  left: -190px;
   background: rgb(9, 11, 11);
   background: linear-gradient(
     90deg,
@@ -59,10 +55,6 @@ header{
   );
   transition: 0.4s ease;
   align-items: center;
-}
-
-#takehand{
-  cursor: grab;
 }
 
 #navbar:hover {
@@ -80,89 +72,93 @@ header{
 }
 
 .navbuttons {
-  font-family: "Nunito", sans-serif;
+  font-family: "transducer", sans-serif;
   color: var(--white);
   text-decoration: none;
   font-size: 1.5em;
   text-align: center;
 }
 
-.navbuttons:hover{
+.navbuttons:hover {
   font-weight: 600;
 }
 
-#mainblock h1 {
-  font-family: "Bebas Neue", sans-serif;
-  font-size:13rem;
-  line-height: 110px;
-  margin: 0;
-}
-
-
-#mainblock h2 {
-  opacity: 50%;
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-  font-weight: 200;
-  margin-top: 20px;
-  margin-bottom: 0;
-}
-
-#mainblock h3 {
-  opacity: 50%;
-  margin: 0;
-  font-family: "Nunito", sans-serif;
-  font-size: 20px;
-  font-weight: 100;
-}
-
-#homepagetitle {
-  width: 100%;
-  height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#homepagetitle a {
+#circle {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: none;
-  padding: 10px;
-  color: var(--white);
-  border: 2px solid var(--white);
-  margin-top: 20px;
-  font-family: "Nunito", sans-serif;
-  width: 100px;
-  transition: 0.2s ease;
+  border: solid white 1px;
+  justify-self: center;
+  align-self: center;
+  grid-area: 1/1 /4/4;
+  border-radius: 100%;
+  /*Circle width and height equals diagonal of cube*/
+  width: 565.7px;
+  height: 565.7px;
 }
-#mainhands {
+#vertical-lines {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: fixed;
-  z-index: -1;
-  width: 65vw;
-  max-width: 1200px;
-  margin-top: -5%;
-  transition: 0.4s ease;
+  border-left: solid white 1px;
+  border-right: solid white 1px;
+  grid-area: 1/2 /4 /2;
 }
-#homepagetitle a:hover {
-  background-color: var(--white);
-  color: #212121;
-}
-#mainblock {
-  color: var(--white);
+#horizontal-lines {
+  grid-area: 2/1 /2 /4;
   display: flex;
-  position: relative;
+  flex-direction: column;
+  border-top: solid white 1px;
+  border-bottom: solid white 1px;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 1;
+}
+#horizontal-lines h1 {
+ 
+  font-family: "transducer-extended", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: white;
+  font-size: 12rem;
+  margin: 0;
+  height:100%;
   text-align: center;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
+  line-height: 200px;
+}
+#titlecenter{
+  display:flex;
+  flex-direction: column;
+  height:fit-content;
+  justify-content: space-between;
+  
   align-items: center;
 }
+#horizontal-lines h3 {
+  font-family: "transducer", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  color: white;
+  font-size: 0.8rem;
+  margin: 0;
+}
+#mainhands {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+  width: 180vh;
+  transition:0.5s ease;
+}
+#mainpage {
+  display: grid;
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-rows: 1fr 400px 1fr;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/imgs/background.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #video {
   height: 100%;
   margin-left: auto;
@@ -174,51 +170,62 @@ header{
 }
 
 #name {
-  color: #c21807;
-  font-weight: 800;
+  color: var(--yellow);
+  font-weight: 100;
   text-decoration: none;
-  font-family: "Nunito", sans-serif;
+  font-family: "transducer", sans-serif;
   text-align: center;
+  font-size: .8rem;
   margin: 2vw;
+  z-index: 120;
 }
+#takehand{
+  font-weight: 100;
+  font-family: "transducer", sans-serif;
+  text-align: center;
+  padding:10px;
+  border: solid var(--white) 1px;
+  text-decoration: none;
+  color:var(--white);
+  font-size: .8rem;
+}
+
 
 #titlescreen {
   display: block;
 }
-#mainblock,
+#mainpage,
 #about,
 #work {
   scroll-snap-align: start;
   scroll-margin: 0px;
+  scroll-behavior: smooth;
 }
 
 /*Mobile*/
 
-@media screen and (min-width:300px) and (max-width:700px){
-    #mainblock h1{
-        font-size: 6rem;
-        line-height: 80%;
-    }
-    #mainhands{
-        width:80vw;
-        min-width: 400px;
-        
-    }
-    #mainblock h2{
-        margin-top: 0;
-        font-size: 1rem;
+@media screen and (min-width: 200px) and (max-width: 700px) {
+  #mainblock h1 {
+    font-size: 6rem;
+    line-height: 80%;
+  }
+  #mainhands {
+    width: 80vw;
+    min-width: 400px;
+  }
+  #mainblock h2 {
+    margin-top: 0;
+    font-size: 0.8rem;
+  }
+  #mainblock h3 {
+    font-size: 0.7rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-    }
-    #mainblock h3{
-        font-size: 1rem;
-        width:50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-#navbar{
-   justify-content: end;
-   align-items:end;
-    
-}
+  #navbar {
+    justify-content: end;
+    align-items: end;
+  }
 }

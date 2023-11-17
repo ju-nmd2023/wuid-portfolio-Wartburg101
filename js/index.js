@@ -1,4 +1,6 @@
 
-function giveHands(percent){
-    document.getElementById('mainhands').style.width = percent;
+function giveHands(size){
+    
+    document.getElementById('mainhands').style.width = size;
+
 }

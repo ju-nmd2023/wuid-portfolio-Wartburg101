@@ -49,15 +49,17 @@
 }
 #abouttitle{
     text-align:left;
-    font-size: 7rem;
+    font-size: 6rem;
     line-height: 90px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "transducer", sans-serif;
+  font-weight: 400;
     margin:0;
     width:100%;
+    transition: 0.6s ease;
 }
 
 #aboutheadtext{
-    grid-area: 1/2 /1 /4;
+    grid-area: 1/2 /1 /5;
     width:100%;
     padding-top: 5vw;
     bottom:0;
@@ -69,7 +71,7 @@
   font-family: "Nunito", sans-serif;
   padding:2vw;
   padding-top: 0;
-  
+  transition: 0.8s ease;
 }
 
 #aboutsubtext{
@@ -78,7 +80,7 @@
     font-style: italic;
     margin:0;
     letter-spacing: .3rem;
-
+  transition: 0.6s ease;
 }
 
 
@@ -117,3 +119,32 @@
   }
 }
 
+@media screen and (min-width:200px) and (max-width:700px){
+  #about{
+    display:grid;
+    height:200vh;
+    grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+   
+  }
+  #aboutheadtext{
+    grid-column: 1;
+    grid-row:1;
+    padding-top:10vw;
+    
+  }
+  #aboutbodytext{
+    font-size: 1rem;
+   grid-column: 1;
+   padding:5vw;
+   padding-top:0;
+   grid-row: 3 / span 2;
+   text-wrap: wrap;
+  }
+#tv{
+  grid-column: 1;
+  grid-row: 2;
+  width:100%;
+  align-items: center;
+}
+  }

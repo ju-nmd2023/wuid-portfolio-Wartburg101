@@ -9,7 +9,9 @@
     <!-- Fonts -->
     
    <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
-   <link href="https://fonts.cdnfonts.com/css/distro" rel="stylesheet">
+   <link rel="stylesheet" href="https://use.typekit.net/dtj7par.css">
+
+
     <title>Portfolio</title>
 
     <script src="js/index.js"></script>
@@ -20,37 +22,41 @@
     
 </head>
 <body onload="loadelements()">
-<header><a href="#anchor1" id="name">ERIK HANSEN</a></header>
+<header><a href="#anchor1" id="name">&copy; ERIK HANSEN 2023</a><div></div></header>
     <div id="navbar">
-        <a href="contact.html" class="navbuttons" style="grid-area: contact;">Contact</a>
-        <a href="#anchor2" class="navbuttons" style="grid-area: about;">About</a>
-        <a href="#anchor3" class="navbuttons" style="grid-area: work;">Work</a>
-        <img src="Icons/right-arrow.png" alt="arrowicon" style="grid-area: arrow; transition:0.5s ease; width: 75%;">
+        
+        <a href="contact.html" title="contact" class="navbuttons" style="grid-area: contact;">Contact</a>
+        <a href="#anchor2" title="about" class="navbuttons" style="grid-area: about;">About</a>
+        <a href="#anchor3" title="work" class="navbuttons" style="grid-area: work;">Work</a>
+        <img src="Icons/right-arrow.png" alt="arrowicon" style="grid-area: arrow; transition:0.5s ease; width: 60%;">
     </div>
     
     <main id="pages">
         <a id="anchor1"></a>
-    <section id="mainblock">
-        <img id="mainhands" src="imgs/mainhands.png" alt="Reaching Hands">
-            <div id="homepagetitle">
-            <h1 class="title">Welcome</h1>
-            <h2 class="subtext">...to my portfolio</h2>
-            
-            <h3 class="subtext">take my hand and let me guide you around!</h2>
-            <a href="#anchor2" onmouseover="giveHands('70vw')" onmouseout="giveHands('65vw')" id="takehand">Take hand</a>
-            
+        <section id="mainpage">
+            <div id="vertical-lines">
             </div>
-
-    </section>
+            <div id="horizontal-lines">
+                <img id="mainhands" src="/imgs/mainhands.png" alt="OpenPalms">
+                <h3>WEB / GRAPHICS / MOTION DESIGN</h3>
+                <div id="titlecenter"><h1>WELCOME</h1>
+                <h3>(TO MY PORTFOLIO)</h3></div>
+                <a id="takehand" href="#anchor2" onmouseover="giveHands('200vh')" onmouseout="giveHands('180vh')">TAKE MY HAND AND LET ME GUIDE YOU AROUND</a>
+            </div>
+            
+            <div id="circle">
+            </div>
+        
+        </section>
+    
 
 <section id="about">
     <a id="anchor2"></a>
-    
     <div id="aboutheadtext">
-        <h1 id="abouttitle" class="hiddenabout">Hello i'm Erik <br> and i do<br>Multi-Media Design</h1>
-        <h2 id="aboutsubtext" class="hiddenabout">Film / Graphics / Web<hr></h2>
+        <h1 id="abouttitle">I'M ERIK AND I DO<br><p style="color: var(--yellow); margin:0; font-weight: 600;">MULTI MEDIA DESIGN</p></h1>
+        <h2 id="aboutsubtext">Film / Graphics / Web<hr></h2>
     </div>
-        <div id="aboutbodytext" class="hiddenabout">
+        <div id="aboutbodytext">
             <p><b>What else is there to know?</b> <br>...you may ask. Well i'm a 21-year old creative soul from the town of Huskvarna, Sweden.
             From an early age creativity has captivated me. Beginning in the world of filmmaking my journey started 
             with making slapstick short films with my friends and selling Minecraft intros on YouTube.
@@ -89,23 +95,21 @@
     <div id="videoplayer">
         <div id="videowrapper" onclick="videoplayerclose()"><iframe id="videoframe" width="930" height="523" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
         <div id="videodescription">Videodescription Here</div>
-        
-        
-        
-        
         <img id="closevideoplayer" src="Icons/closeicon.svg" alt="crossbutton" onclick="videoplayerclose()">
     </div>
 
     
     <div id="workleftsection">
-        <h1 id="worktitle">Work.</h1>
+        <h1 id="worktitle"><p>This is my</p><br> Work.</h1>
         <div class="categorybuttons">
             <a id="clickfilm" class="workcategorybutton" onclick="changesection(this.id)">Film</a>
             <a id="clickgraphics" class="workcategorybutton" onclick="changesection(this.id)">Graphics</a>
             <a id="clickweb" class="workcategorybutton" onclick="changesection(this.id)">Web</a>
         </div>
-        <div id="workdescription"><p>So i caught your interest? Well here's my work! Select whatever category you're interested in and then click the project you find cool! More work is added over time.</p></div>
-
+        <div id="workdescription"><p>So i caught your interest? Well here's my work! Select whatever category you're interested in and then click the project you find cool! More work is added over time. Below are some links to external portfolios and my LinkedIn.</p></div>
+        <div id="extlinks"><a title="Linkedin" href="">LinkedIn<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path d="M0 0v24h24v-24h-24zm8 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.397-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+            <a title="Youtube Portfolio" href="https://youtube.com/playlist?list=PLIH-MdeoWPk149ce3pvoWjlxE3w5RI_0w&si=H0xiBrwuS2MLizcz">Youtube<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50"><path d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"></path></svg></a>
+            </div>
     </div>
     
     <!--Filmwork section-->
