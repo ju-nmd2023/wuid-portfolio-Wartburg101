@@ -22,13 +22,14 @@
     
 </head>
 <body onload="loadelements()">
-<header><a href="#anchor1" id="name">&copy; ERIK HANSEN 2023</a><div></div></header>
+<header><div id="indicatorcontainer"><div id="navindicator"><h3>Home</h3><h3>About</h3><h3>Work</h3><h3>Contact</h3></div></div><a href="#anchor1" id="name">&copy; ERIK HANSEN 2023</a></header>
     <div id="navbar">
         
         <a href="contact.html" title="contact" class="navbuttons" style="grid-area: contact;">Contact</a>
         <a href="#anchor2" title="about" class="navbuttons" style="grid-area: about;">About</a>
         <a href="#anchor3" title="work" class="navbuttons" style="grid-area: work;">Work</a>
-        <img src="Icons/right-arrow.png" alt="arrowicon" style="grid-area: arrow; transition:0.5s ease; width: 60%;">
+        <svg xmlns="http://www.w3.org/2000/svg" style="grid-area: arrow; transition:0.4s ease; width:50px" viewBox="0 0 24 24"><path d="m14.707 11.293-4-4A1 1 0 0 0 9 8v8a1 1 0 0 0 1.707.707l4-4a1 1 0 0 0 0-1.414z" style="fill:#ffcb74;" data-name="Right"/></svg>
+        
     </div>
     
     <main id="pages">
@@ -53,7 +54,7 @@
 <section id="about">
     <a id="anchor2"></a>
     <div id="aboutheadtext">
-        <h1 id="abouttitle">I'M ERIK AND I DO<br><p style="color: var(--yellow); margin:0; font-weight: 600;">MULTI MEDIA DESIGN</p></h1>
+        <h1 id="abouttitle">I'M ERIK AND I DO<br><p style="color: var(--yellow); margin:0; font-weight: 600; font-style:italic;">MULTI-MEDIA DESIGN</p></h1>
         <h2 id="aboutsubtext">Film / Graphics / Web<hr></h2>
     </div>
         <div id="aboutbodytext">
@@ -71,7 +72,7 @@
                 you're very welcome! I'm eager to share my passion with you and hope you won't hesitate to contact me if you need help, have any questions
                 or just feel like connecting!
             </p>
-            <p style="font-style: italic; color:red;">
+            <p style="font-style: italic; color:var(--yellow)">
                 "Oh, by the way... I think the TV could use a kick!"
             </p>
         

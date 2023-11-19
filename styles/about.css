@@ -16,9 +16,10 @@
 #tv {
   display: flex;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
   flex-direction: column;
   justify-content: center;
+  padding-left: 10vh;
 }
 
 
@@ -36,7 +37,7 @@
   bottom: 0;
   padding: 5px;
   width: auto;
-  height: 90%;
+  height: 100%;
   border-radius: 0%;
   cursor: pointer;
   padding:0;
@@ -55,32 +56,34 @@
   font-weight: 400;
     margin:0;
     width:100%;
-    transition: 0.6s ease;
+    transition: 0.4s ease;
 }
 
 #aboutheadtext{
-    grid-area: 1/2 /1 /5;
+    grid-area: 1/1 /1 /4;
     width:100%;
-    padding-top: 5vw;
+    padding-top: 10vh;
+    padding-left: 10vh;
     bottom:0;
 }
 
 #aboutbodytext{
-  grid-area: 2/3 /2 /5;
+  grid-area: 2/2 /2 /4;
   font-size: .8rem;
   font-family: "Nunito", sans-serif;
   padding:2vw;
   padding-top: 0;
-  transition: 0.8s ease;
+  transition: 1s ease;
 }
 
 #aboutsubtext{
     opacity: 100%;
-    font-family: "Bebas Neue", sans-serif;
-    font-style: italic;
+    font-family: "transducer", sans-serif;
+    font-weight: 100;
+    
     margin:0;
     letter-spacing: .3rem;
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 
