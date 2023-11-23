@@ -20,6 +20,8 @@
   flex-direction: column;
   justify-content: center;
   padding-left: 10vh;
+  width:100%;
+  
 }
 
 
@@ -29,13 +31,14 @@
   width: 100%;
   height: 100%;
   position: relative;
+  
 }
 
 #tv div video {
   position: absolute;
-  object-fit: cover;
-  bottom: 0;
-  padding: 5px;
+  
+  bottom:0;
+  
   width: auto;
   height: 100%;
   border-radius: 0%;
@@ -50,8 +53,8 @@
 }
 #abouttitle{
     text-align:left;
-    font-size: 6rem;
-    line-height: 90px;
+    font-size: 4.5rem;
+    line-height: 8vh;
     font-family: "transducer", sans-serif;
   font-weight: 400;
     margin:0;
@@ -65,13 +68,14 @@
     padding-top: 10vh;
     padding-left: 10vh;
     bottom:0;
+    
 }
 
 #aboutbodytext{
   grid-area: 2/2 /2 /4;
   font-size: .8rem;
   font-family: "Nunito", sans-serif;
-  padding:2vw;
+  padding-left:20vh;
   padding-top: 0;
   transition: 1s ease;
 }
@@ -122,24 +126,39 @@
   }
 }
 
-@media screen and (min-width:200px) and (max-width:700px){
+@media screen and (min-width:200px) and (max-width:1010px){
   #about{
     display:grid;
-    height:200vh;
+    height:fit-content;
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
     grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
    
   }
   #aboutheadtext{
     grid-column: 1;
     grid-row:1;
-    padding-top:10vw;
+    padding:0;
     
+  }
+  #abouttitle{
+    font-size: 2.3rem;
+    line-height: 3rem;
+    text-align: left;
+    padding:1.5vh;
+    padding-top:10vh;
+    width:100%;
+  }
+  #aboutsubtext{
+    font-size: 1.3rem;
+    padding:1.5vh;
   }
   #aboutbodytext{
     font-size: 1rem;
    grid-column: 1;
-   padding:5vw;
+   padding:10vw;
    padding-top:0;
    grid-row: 3 / span 2;
    text-wrap: wrap;
@@ -149,5 +168,7 @@
   grid-row: 2;
   width:100%;
   align-items: center;
+  padding:0;
+  
 }
   }

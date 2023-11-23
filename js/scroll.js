@@ -5,11 +5,27 @@ let aboutbody = document.getElementById("aboutbodytext");
 /*Navindicator*/ 
 let sectiontitle = document.getElementById("navindicator")
 
+
+
 window.onscroll = function() {
-    /*Aboutpage scroll */
-let scrollLimit1 = 400;
-/*Workpage scroll*/
-let scrollLimit2 = 1000;
+
+let win = this;
+
+let scrollLimit1;
+let scrollLimit2;
+
+    /*Check if user is on mobile or desktop*/
+    if(window.innerWidth < 700){
+        scrollLimit1 = 400;
+        scrollLimit2 = 2000;
+        }
+        else{
+        /*Aboutpage scroll */
+        scrollLimit1 = 400;
+        /*Workpage scroll*/
+        scrollLimit2 = 1000;
+        }
+    
 
 /*Find Out where the user is*/
 

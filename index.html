@@ -6,18 +6,21 @@
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/work.css">
     <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <!-- Fonts -->
     
    <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://use.typekit.net/dtj7par.css">
 
 
-    <title>Portfolio</title>
+    <title>Portfolio - Erik H</title>
 
     <script src="js/index.js"></script>
     <script src="js/worksection.js"></script>
     <script src="js/videoplayer.js"></script>
     <script defer src="js/scroll.js"></script>
+    <script defer src="js/tvswitch.js"></script>
+    
 </head>
 <body onload="loadelements()">
 <header><div id="indicatorcontainer"><div id="navindicator"><h3>Home</h3><h3>About</h3><h3>Work</h3><h3>Contact</h3></div></div><a href="#anchor1" id="name">&copy; ERIK HANSEN 2023</a></header>
@@ -37,20 +40,19 @@
             </div>
             <div id="horizontal-lines">
                 <img id="mainhands" src="/imgs/mainhands.png" alt="OpenPalms">
-                <h3>WEB / GRAPHICS / MOTION DESIGN</h3>
+                <h3>FILM / WEB / GRAPHICS</h3>
                 <div id="titlecenter"><h1>WELCOME</h1>
                 <h3>(TO MY PORTFOLIO)</h3></div>
-                <a id="takehand" href="#anchor2" onmouseover="giveHands('200vh')" onmouseout="giveHands('180vh')">TAKE MY HAND AND LET ME GUIDE YOU AROUND</a>
+                <a id="takehand" href="#anchor2" onmouseover="giveHands('130vw')" onmouseout="giveHands('110vw')">TAKE MY HAND AND LET ME GUIDE YOU AROUND</a>
             </div>
             
             <div id="circle">
             </div>
         
         </section>
+        <a id="anchor2"></a>
+        <section id="about">
     
-
-<section id="about">
-    <a id="anchor2"></a>
     <div id="aboutheadtext">
         <h1 id="abouttitle">I'M ERIK AND I DO<br><p style="color: var(--yellow); margin:0; font-weight: 600; font-style:italic;">MULTI-MEDIA DESIGN</p></h1>
         <h2 id="aboutsubtext">Film / Graphics / Web<hr></h2>
@@ -79,22 +81,22 @@
     
     
     <div id="tv">
-        
         <div>
             <video id="tvshowreel" autoplay muted loop class="videocontrols"><source id="tvsource" src="videos/tv-frame-showreel.mp4"></video>
             <video id="tvstatic" autoplay muted loop class="videocontrols"><source id="tvsource" src="videos/tv-frame-static.mp4"></video>
         </div>
     </div>
-    <script src="js/tvswitch.js"></script>
+    
    
-</section>
+        </section>
 
-<section id="work">
+        <section id="work">
         <a id="anchor3"></a>
-    <div id="videoplayer">
-        <div id="videowrapper" onclick="videoplayerclose()"><iframe id="videoframe" width="930" height="523" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+    <div id="videoplayer"  onclick="videoplayerclose()">
+        <div id="videowrapper"><iframe id="videoframe" width="930" height="523" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
         <div id="videodescription">Videodescription Here</div>
-        <img id="closevideoplayer" src="Icons/closeicon.svg" alt="crossbutton" onclick="videoplayerclose()">
+        <p>Click anywhere to close</p>
+        
     </div>
 
     
@@ -139,11 +141,12 @@
         <div class="webitem"><h2>Coming Soon</h2><p>In the works</p></div>
         <div class="webitem"><h2>Coming Soon</h2><p>In the works</p></div>
     </div>
-</section>
-      <section id="contact">
-        <p>hej</p>
-      </section>
-</main>
+        </section>
+        <section id="contact">
+            <a id="anchor4"></a>
+            <p>hej</p>
+        </section>
+    </main>
 <script src="js/videoplayer.js"></script>
 </body>
 </html>

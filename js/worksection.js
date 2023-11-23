@@ -6,7 +6,7 @@ const videolinks = [
   "https://www.youtube.com/embed/LRlWCsXxZfk",
   "https://www.youtube.com/embed/UWsvgdCYpmM",
   "https://www.youtube.com/embed/w-3ZWHEKznI",
-  "https://www.youtube.com/embed/XUNQyyZP4s8",
+  "https://www.youtube.com/embed/F98sG6VOG88?list=PLIH-MdeoWPk149ce3pvoWjlxE3w5RI_0w",
   "https://www.youtube.com/embed/8o0H47ZGihU",
   "https://www.youtube.com/embed/UlgO9yUHKew",
 ];
@@ -18,7 +18,7 @@ const videotitles = [
   "Lightdance",
   "The Fat and The Furious",
   "Kafè Brädan Promotion",
-  "dancinginmyroom",
+  "In the end (Version 1)",
   "All girls are the same",
   "2021",
 ];

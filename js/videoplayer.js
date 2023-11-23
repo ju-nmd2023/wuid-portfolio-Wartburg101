@@ -1,5 +1,5 @@
 function videoplayeropen(name) {
-  let video = name;
+  
 
   document.getElementById("videoplayer").style.display = "block";
   
