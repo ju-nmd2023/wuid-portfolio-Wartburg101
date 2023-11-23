@@ -18,7 +18,6 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
-  
 }
 body {
   margin: 0;
@@ -31,31 +30,30 @@ header {
   justify-content: space-between;
   flex-direction: row;
   width: 100vw;
-  height:10vh;
+  height: 10vh;
   top: 0;
-  z-index:110;
+  z-index: 110;
 }
 
-#navindicator{
-  width:200px;
-  
-  display:flex;
+#navindicator {
+  width: 200px;
+
+  display: flex;
   flex-direction: column;
   align-items: center;
-  transition:0.4s ease;
+  transition: 0.4s ease;
 }
-#navindicator h3{
-  margin:3vh;
+#navindicator h3 {
+  margin: 3vh;
   color: var(--yellow);
   font-weight: 400;
   font-family: "transducer-extended", sans-serif;
   text-align: center;
-  font-size: .8rem;
-  
+  font-size: 0.8rem;
 }
-#indicatorcontainer{
- overflow:hidden;
-  height:100%;
+#indicatorcontainer {
+  overflow: hidden;
+  height: 100%;
 }
 #navbar {
   display: grid;
@@ -80,7 +78,7 @@ header {
   );
   transition: 0.4s ease;
   align-items: center;
-  width:40vh;
+  width: 40vh;
 }
 
 #navbar:hover {
@@ -135,7 +133,7 @@ header {
   justify-content: space-evenly;
   align-items: center;
   z-index: 1;
-  position:relative;
+  position: relative;
 }
 #horizontal-lines h1 {
   font-family: "transducer-extended", sans-serif;
@@ -144,14 +142,14 @@ header {
   color: white;
   font-size: 12rem;
   margin: 0;
-  height:100%;
+  height: 100%;
   text-align: center;
   line-height: 200px;
 }
-#titlecenter{
-  display:flex;
+#titlecenter {
+  display: flex;
   flex-direction: column;
-  height:fit-content;
+  height: fit-content;
   justify-content: space-between;
   align-items: center;
 }
@@ -169,8 +167,8 @@ header {
   margin-left: auto;
   margin-right: auto;
   z-index: -1;
-  width:110vw;
-  transition:0.5s ease;
+  width: 110vw;
+  transition: 0.5s ease;
 }
 #mainpage {
   display: grid;
@@ -178,8 +176,8 @@ header {
   grid-template-rows: 1fr 400px 1fr;
   width: 100vw;
   height: 100vh;
-  background-image: url(/imgs/background.png);
-  overflow:hidden;
+  background-image: url(../imgs/background.png);
+  overflow: hidden;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -201,21 +199,20 @@ header {
   text-decoration: none;
   font-family: "transducer", sans-serif;
   text-align: center;
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin: 2vh;
   z-index: 120;
 }
-#takehand{
+#takehand {
   font-weight: 100;
   font-family: "transducer", sans-serif;
   text-align: center;
-  padding:10px;
+  padding: 10px;
   border: solid var(--white) 1px;
   text-decoration: none;
-  color:var(--white);
-  font-size: .8rem;
+  color: var(--white);
+  font-size: 0.8rem;
 }
-
 
 #titlescreen {
   display: block;
@@ -229,31 +226,27 @@ header {
   scroll-behavior: smooth;
 }
 
-@media screen and (max-width:1400px){
+@media screen and (max-width: 1400px) {
   #horizontal-lines h1 {
-    
     font-size: 10rem;
-    
   }
 }
-@media screen and (max-width:1100px){
+@media screen and (max-width: 1100px) {
   #horizontal-lines h1 {
-    
     font-size: 7rem;
-    
   }
 }
 
 /*Mobile*/
 
 @media screen and (min-width: 200px) and (max-width: 700px) {
-  #mainpage{
+  #mainpage {
     justify-content: center;
     grid-template-columns: 1fr 250px 1fr;
     grid-template-rows: 1fr 250px 1fr;
   }
-  #navindicator{
-    width:150px;
+  #navindicator {
+    width: 150px;
   }
 
   #navbar {
@@ -261,27 +254,26 @@ header {
     align-items: end;
   }
 
-  #circle{
+  #circle {
     /*Diagonal of square equals width and height of circle*/
     width: 353.55px;
     height: 353.55px;
   }
-#titlecenter{
-  justify-content: space-around;
-}
-  #titlecenter h1{
+  #titlecenter {
+    justify-content: space-around;
+  }
+  #titlecenter h1 {
     font-size: 3rem;
     line-height: normal;
   }
-  #takehand{
-    width:50%;
+  #takehand {
+    width: 50%;
   }
-  #navbar{
-    width:30vh;
-    left:-23vh;
+  #navbar {
+    width: 30vh;
+    left: -23vh;
   }
-  header{
-    height:7vh;
+  header {
+    height: 7vh;
   }
-  
 }
