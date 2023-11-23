@@ -1,4 +1,4 @@
-/*//Code for switching video partially taken from https://www.youtube.com/watch?v=ydeQbbF9jbw&ab_channel=%23SmartCode*/
+/*//Code for switching tv partially inspired from https://www.youtube.com/watch?v=ydeQbbF9jbw&ab_channel=%23SmartCode*/
 
 
 
