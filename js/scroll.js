@@ -13,23 +13,32 @@ let win = this;
 
 let scrollLimit1;
 let scrollLimit2;
+let scrollLimit3;
 
-    /*Check if user is on mobile or desktop*/
+    /*Check if user is on mobile or desktop or wider screen*/
     if(window.innerWidth < 700){
+        /*Mobile scrollborders*/
         scrollLimit1 = 400;
-        scrollLimit2 = 2000;
+        scrollLimit2 = 1400;
+        scrollLimit2 = 1900;
         }
+        /*Desktop scrollborders*/
         else{
         /*Aboutpage scroll */
         scrollLimit1 = 400;
         /*Workpage scroll*/
         scrollLimit2 = 1000;
+        /*Contactpage scroll */
+        scrollLimit3 = 1800;
         }
     
 
 /*Find Out where the user is*/
 
-if(window.scrollY >= scrollLimit2){
+if(window.scrollY >= scrollLimit3){
+    scrollAnimations("contact");
+}
+else if(window.scrollY >= scrollLimit2){
     scrollAnimations("work");
 }
 else if(window.scrollY >= scrollLimit1){
@@ -63,16 +72,17 @@ function scrollAnimations(position){
         sectiontitle.style.transform = "translateY(-25%)"
     }
     if(position == "work"){
-        "translateY(-50%)"
+        
+       
+        sectiontitle.style.transform = "translateY(-50%)"
+    }
+    if(position == "contact"){
         abouttitle.style.opacity = "0%"
         abouttitle.style.transform = "translateX(-20%)"
         aboutsubtext.style.opacity = "0%"
         aboutsubtext.style.transform = "translateX(-20%)"
         aboutbody.style.opacity = "0%"
 
-        sectiontitle.style.transform = "translateY(-50%)"
-    }
-    else{
-
+        sectiontitle.style.transform = "translateY(-75%)"
     }
 }

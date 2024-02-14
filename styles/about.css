@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  background-image: url(../imgs/background1.png);
+  background-image: url(../imgs/background1.jpg);
   background-position: left;
   background-repeat: no-repeat;
   color: var(--white);
@@ -36,9 +36,7 @@
 
 #tv div video {
   position: absolute;
-  
   bottom:0;
-  
   width: auto;
   height: 100%;
   border-radius: 0%;
@@ -47,6 +45,11 @@
 }
 
 #tvshowreel{
+  
+  box-shadow: 0px 0px 25px 15px rgba(0,0,0,1.0);
+
+}
+#tvstatic{
   
   box-shadow: 0px 0px 25px 15px rgba(0,0,0,1.0);
 
@@ -90,13 +93,9 @@
   transition: 0.4s ease;
 }
 
-
 .tvframeanimation {
   animation: punch 0.4s ease 0s 1 normal forwards;
 }
-
-
-
 
 @keyframes punch {
   0%,

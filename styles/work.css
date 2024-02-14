@@ -6,7 +6,7 @@
   background-color: #c21807;
   width: 100%;
   align-items: center;
-  background-image: url(../imgs/background2.png);
+  background-image: url(../imgs/background2.jpg);
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -78,7 +78,7 @@
 }
 .workcategorybutton:hover {
   background-color: var(--black);
-  color: var(--yellow);
+  color: #F10001;
   border-color: var(--black);
 }
 /*__FILMSECTION__*/
